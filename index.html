@@ -1,87 +1,100 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Mi blog de cocina</title>
 </head>
 <body>
-   <header>
-       <a href="#">Mi blog de cocina</a>
-       <nav>
-           <a href="#">Home</a>
-           <a href="">Platos
-            <ul>
-                <li>Ensalada</li>
-                <li>Carne</li>
-                <li>Helados</li>
-            </ul></a>
+   <header class="header">
+       <a href="#" class="title-header">Mi blog de cocina</a>
+       <a href="#" class="menu-mobile"><i class="material-icons">menu</i>MENU</a>
+       <nav class="menu-desktop">
+            <a href="#">HOME</a>
+            <a href="#">PLATOS</a>
+                <ul class="options">
+                    <li>Ensalada</li>
+                    <li>Carne</li>
+                    <li>Helados</li>
+                </ul>
+            <a href="#">SOBRE MI</a>
+            <a href="#">CONTACTO</a>
        </nav>
     </header>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="carousel">
+        <div class="image-carousel"><img src="images/img-1.jpg"></div>
+        <div class="image-carousel"><img src="images/img-2.jpg"></div>
+        <div class="image-carousel"><img src="images/img-3.jpg"></div>
+        <div class="image-carousel"><img src="images/img-4.jpg"></div>
     </div>
-    <section>
-        <div>
-            <div>
-                <img src="" alt="">
+    <section class="recipes">
+            <div class="list-image">
+                <img src="images/platos.jpeg" class="img-recipe" alt="">
                 <a href="">PLATOS</a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="list-image">
+                <img src="images/recetas.JPG" class="img-recipe" alt="">
                 <a href="">RECETAS</a>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="list-image">
+                <img src="images/exoticos.jpg" class="img-recipe" alt="">
                 <a href="">EXOTICOS</a>
             </div>
-        </div>
-        <article>
-            <iframe src="" frameborder="0">
-
-            </iframe>
-            <p></p>
-            <aside>
-                <a href="">ACERCA DE MI</a>
-                <img src="" alt="">
-                <h3></h3>
-                <p>Tengo 23 años, hace dos que estudio <br> y soy fanatica de la comida, <br> espero que les guste mi contenido.</p>
-                <a href="">NEWSLETTER</a>
+    </section>
+    <section class="information">
+            <div class="video">
+                <iframe src="https://www.youtube.com/watch?v=mEWBwrC50S4&t=73s"></iframe>
+                <p>20 de abril | ¿Como preparar las mejores hamburguesas?</p>
+            </div>
+            <aside class="about-me">
+                <p class="border">ACERCA DE MI</p>
+                <img src="images/img-3.jpg" alt="">
+                <div class="text-about">
+                    <h3>Natalia Guida</h3>
+                    <p>Tengo 23 años, hace dos que estudio y soy fanatica de la comida, espero que les guste mi contenido.</p>
+                </div>
+                <a href="#" class="border">NEWSLETTER</a>
             </aside>
-        </article>
-        <div>
-            <img src="" alt="">
-            <div>
-                <p></p>
-                <p></p>
-                <div>
-                    <img src="" alt="">20
-                    <img src="" alt="">10
-                    <img src="" alt="">
+    </section>
+    <section class="articles">
+        <div class="div-article">
+            <div class="image-article"><img src="images/nota1.JPG" alt=""></div>
+            <div class="info-article">
+                <div class="interaction-article">
+                    <p>By Maria | Mayo 19, 2017</p>
+                    <a><i class="material-icons">favorite_border</i>20</a>
+                    <a><i class="material-icons">forum</i>10</a>
+                    <a><i class="material-icons">share</i></a>
                 </div>
-                <h2></h2>
-                <span></span>
-                <a href=""></a>
+                <div class="text-article">
+                <h2>Delicias dulces</h2>
+                <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
+                <a href="#" class="button-article">Leer mas</a>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="">
-            <div>
-                <p></p>
-                <p></p>
-                <div>
-                    <img src="" alt="">20
-                    <img src="" alt="">10
-                    <img src="" alt="">
+        <div class="div-article">
+            <div class="image-article"><img src="images/nota2.JPG" alt=""></div>
+            <div class="info-article">
+                <div class="interaction-article">
+                    <p>By Maria | Mayo 19, 2017</p>
+                    <a><i class="material-icons">favorite_border</i>40</a>
+                    <a><i class="material-icons">forum</i>70</a>
+                    <a><i class="material-icons">share</i></a>
                 </div>
-                <h2></h2>
-                <span></span>
-                <a href=""></a>
+                <div class="text-article">
+                    <h2>Comidas simples</h2>
+                    <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
+                    <a href="#" class="button-article"></a>
+                </div>
             </div>
         </div>
+    </section>
+    <section class="footer">
         <ul>
             <li>FACEBOOK</li>
             <li>TWITTER</li>
