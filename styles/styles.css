@@ -57,8 +57,30 @@ body{
 
 }
 
+.menu-desktop a:hover{
+    color: rgb(180, 75, 89);
+}
+
+a.platos{
+    position: relative;
+}
+
 .options{
     display:none;
+    position: absolute;
+    width: 90px;
+    overflow: hidden;
+    top:20%;
+    left:0%;
+    background-color: #fff;
+}
+
+.options li{
+    margin:5px 0;
+}
+
+.platos:hover .options{
+    display:block;
 }
 
 .menu-mobile{
